@@ -1,4 +1,9 @@
-* {padding: 0; margin: 0; list-style: none; text-decoration: none;}
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
 
 @font-face {
 	font-family: lobster;
@@ -20,18 +25,20 @@ body {
 
 #wrapper {
 	max-width: 900px;
-	position:relative;
+	position: relative;
 	margin: 0 auto;
 	/* overflow: hidden; */
 }
 
-P{ padding: 12px 0 12px 0;}
+P {
+	padding: 12px 0 12px 0;
+}
 
 /* header */
 
 header {
 	/* display block; */
-	position:absolute;
+	position: absolute;
 	margin: 0px 20px 10px 0;
 	padding: 5px;
 	width: 200px;
@@ -62,7 +69,7 @@ header h1 {
 }
 
 header h2 {
-	margin-top:10px;
+	margin-top: 10px;
 	border-top: 1px dashed #fff;
 	padding-top: 5px;
 	font-size: 15px;
@@ -75,11 +82,12 @@ header h2 {
 /* navigation  menu */
 
 nav {
-	position:absolute;
+	position: absolute;
 	margin: 20px 20px 10px 0;
 	padding: 5px;
 	width: 200px;
-    top: 120px;
+	top: 120px;
+	list-style: none;
 }
 
 .main-nav {
@@ -141,7 +149,7 @@ nav {
 .nav-outer .t-recipe a, .nav-outer ul li a:hover {
 	background: #FFF;
 	color: #F90;
- }
+}
 
 
 
@@ -151,8 +159,8 @@ aside {
 	width: 200px;
 	position: absolute;
 	left: 0px;
-    top: 300px;
-	display:block;
+	top: 300px;
+	display: block;
 	padding: 5px;
 	background: #bbb;
 	/* float: right;
@@ -196,7 +204,7 @@ aside a:hover {
 /* article section */
 
 article {
-	max-width: 600px;
+	max-width: 800px;
 	margin: 20px 20px 0 230px;
 	/* position:absolute; */
 	/* margin: 20px 0 20px 0; */
@@ -210,7 +218,7 @@ article {
 }
 
 article a {
-	color:#F30;
+	color: #F30;
 	font-weight: bold;
 }
 
@@ -222,23 +230,22 @@ article p {
 	line-height: 130%;
 	text-indent: 1em;
 	font-size: 14px;
-	margin-bottom: 10px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #111;
 }
 
-aside + div p:first-of-type:first-letter {
+aside+div p:first-of-type:first-letter {
 	float: left;
 	font-family: lobster;
 	font-size: 85px;
 	padding-right: 8px;
-	padding-top:5px;
+	padding-top: 5px;
 	line-height: 60px;
 	color: #F90;
 }
 
 .blur p {
-	text-indent:0;
+	text-indent: 0;
 }
 
 article h2 {
@@ -274,18 +281,18 @@ article img {
 	margin: 10px 0 10px 20px;
 }
 
-/* footer */ 
+/* footer */
 
 footer {
-	color:#fff;
+	color: #fff;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 0.8rem;
-	position:relative;
+	position: relative;
 }
 
 footer p {
 	position: absolute;
-	top:10px;
+	top: 10px;
 	left: 10px;
 }
 
@@ -344,13 +351,29 @@ footer p {
 	}
 
 	article {
-		margin:0;
+		margin: 0;
 		border-radius: 0;
 	}
 
-	.main-nav { display: none; }
+	.main-nav {
+		display: none;
+	}
 
-	header {position: static; width: 100%; margin:0; padding-top:50px; border-radius: 0;}
+	header {
+		position: static;
+		width: 100%;
+		margin: 0;
+		padding-top: 40px;
+		border-radius: 0;
+	}
+
+	nav {
+		list-style: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
 
 	.nav-outer ul {
 		position: fixed;
@@ -358,9 +381,9 @@ footer p {
 		left: 0;
 		margin: 0;
 		display: flex;
-		list-style:none;
+		list-style: none;
 		background: #F90;
-		width:100%;
+		width: 100%;
 
 	}
 
@@ -377,7 +400,7 @@ footer p {
 		position: static;
 		float: none;
 		margin-right: 20px;
-		padding-left: 20px;
+		/* padding-left: 0px; */
 		width: 80%;
 	}
 
@@ -390,6 +413,6 @@ footer p {
 	article img {
 		float: none;
 		width: 100%;
-		margin:0;
+		margin: 0;
 	}
 }
