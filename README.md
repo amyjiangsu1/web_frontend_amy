@@ -1,4 +1,4 @@
-# web_frontend_amy
+# Web Frontend Foundations (Amy@NYU)
 Assignments, Explorations of Web Frontend Foundation course at NYU
 
 These are the web frontend links to my assignments:
